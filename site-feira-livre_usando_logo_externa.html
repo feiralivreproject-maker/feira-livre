@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feira Livre — Revista de Marketing</title>
+  <meta name="description" content="Feira Livre — revista de marketing: moderno, tradicional e bonito. Edições, assinatura, contato e prévia no Canva." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800">
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#inicio" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 grid place-content-center text-white font-black">FL</div>
+          <div class="leading-tight">
+            <p class="font-extrabold tracking-tight text-xl">Feira Livre</p>
+            <p class="text-xs text-neutral-500 -mt-0.5">Revista de Marketing</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-7 text-sm">
+          <a class="hover:text-emerald-700" href="#edicoes">Edições</a>
+          <a class="hover:text-emerald-700" href="#sobre">Sobre</a>
+          <a class="hover:text-emerald-700" href="#planos">Assinatura</a>
+          <a class="hover:text-emerald-700" href="#contato">Contato</a>
+          <button id="btn-login" class="px-4 py-2 rounded-xl border border-neutral-300 hover:border-emerald-600 hover:text-emerald-700 transition">Área do assinante</button>
+          <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">Ler edição</a>
+        </nav>
+        <button id="btn-menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-neutral-300">
+          <span class="sr-only">Abrir menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-200 bg-white">
+      <div class="px-4 py-3 flex flex-col gap-3 text-sm">
+        <a class="py-2" href="#edicoes">Edições</a>
+        <a class="py-2" href="#sobre">Sobre</a>
+        <a class="py-2" href="#planos">Assinatura</a>
+        <a class="py-2" href="#contato">Contato</a>
+        <button id="btn-login-mobile" class="py-2 text-left">Área do assinante</button>
+        <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold text-center">Ler edição</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="inicio" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(40%_40%_at_70%_10%,rgba(16,185,129,0.15),rgba(0,0,0,0))]"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-neutral-900">
+            Marketing com alma: <span class="text-emerald-700">moderno, tradicional e bonito</span>
+          </h1>
+          <p class="mt-5 text-lg text-neutral-600 max-w-xl">
+            A <strong>Feira Livre</strong> é a revista que conecta marcas e pessoas com conteúdo profundo, visual elegante e credibilidade. Leia online, assine, anuncie e faça parte dessa conversa.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="px-5 py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Ler edição atual</a>
+            <a href="#planos" class="px-5 py-3 rounded-xl border border-neutral-300 hover:border-emerald-600 hover:text-emerald-700">Assinar a revista</a>
+            <a href="#anunciar" class="px-5 py-3 rounded-xl border border-neutral-300">Anunciar</a>
+          </div>
+          <div class="mt-6 flex items-center gap-6 text-sm text-neutral-500">
+            <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span> Atualizada semanalmente</div>
+            <div class="flex items-center gap-2"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Conteúdo curado</div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-soft ring-1 ring-black/5 bg-white">
+            <img src="logo-feira-livre.webp" alt="Feira Livre — logo" class="w-full h-full object-contain p-8 bg-white" />
+          </div>
+          <p class="mt-3 text-xs text-neutral-500">* Logo da revista. Para ler a edição, use o botão “Ler edição”.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="valores" class="py-16 border-t border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl bg-neutral-50 border border-neutral-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600/10 grid place-content-center mb-4"><span class="font-black text-emerald-700">1</span></div>
+          <h3 class="font-bold text-xl">Moderno</h3>
+          <p class="mt-2 text-neutral-600">Design responsivo, leitura confortável e integração com plataformas digitais.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-neutral-50 border border-neutral-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600/10 grid place-content-center mb-4"><span class="font-black text-emerald-700">2</span></div>
+          <h3 class="font-bold text-xl">Tradicional</h3>
+          <p class="mt-2 text-neutral-600">Reportagens profundas, entrevistas e curadoria editorial com credibilidade.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-neutral-50 border border-neutral-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600/10 grid place-content-center mb-4"><span class="font-black text-emerald-700">3</span></div>
+          <h3 class="font-bold text-xl">Bonito</h3>
+          <p class="mt-2 text-neutral-600">Fotografia generosa, tipografia elegante e diagramação de revista premium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="edicoes" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-3xl font-black tracking-tight">Edições</h2>
+          <p class="text-neutral-600 mt-1">Acompanhe as publicações mais recentes da Feira Livre.</p>
+        </div>
+        <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="hidden sm:inline-flex px-4 py-2 rounded-xl border border-neutral-300 hover:border-emerald-600 hover:text-emerald-700">Ver todas</a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="group block">
+          <div class="aspect-[3/4] w-full rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm">
+            <div class="w-full h-full grid place-content-center">
+              <span class="text-neutral-400">Prévia da capa</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h3 class="font-semibold group-hover:text-emerald-700 transition">Edição Atual</h3>
+            <p class="text-sm text-neutral-600">Destaques de Marketing & Cultura</p>
+          </div>
+        </a>
+        <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="group block">
+          <div class="aspect-[3/4] w-full rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm">
+            <div class="w-full h-full grid place-content-center">
+              <span class="text-neutral-400">Prévia da capa</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h3 class="font-semibold group-hover:text-emerald-700 transition">Arquivo — #01</h3>
+            <p class="text-sm text-neutral-600">Tendências 2025</p>
+          </div>
+        </a>
+        <a href="https://www.canva.com/design/DAGvW5b3mCg/nLhJcg6vgVCvtH0rpUfkCg/view?utm_content=DAGvW5b3mCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="group block">
+          <div class="aspect-[3/4] w-full rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm">
+            <div class="w-full h-full grid place-content-center">
+              <span class="text-neutral-400">Prévia da capa</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h3 class="font-semibold group-hover:text-emerald-700 transition">Arquivo — #02</h3>
+            <p class="text-sm text-neutral-600">Marcas que Importam</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-20 border-t border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl font-black tracking-tight">Sobre a Feira Livre</h2>
+        <p class="mt-4 text-neutral-700 leading-relaxed">
+          Nascemos com a proposta de unir o melhor do jornalismo de revista à agilidade do digital. Nosso nome homenageia a cultura popular: um espaço vivo de trocas, descobertas e encontros. Aqui, você encontra histórias bem contadas, dados confiáveis e um olhar humano sobre o mercado.
+        </p>
+        <ul class="mt-6 space-y-3 text-neutral-700">
+          <li class="flex gap-3"><span class="mt-1 w-2 h-2 bg-emerald-600 rounded-full"></span> Linha editorial ética e independente</li>
+          <li class="flex gap-3"><span class="mt-1 w-2 h-2 bg-emerald-600 rounded-full"></span> Pautas de branding, consumo, cultura e tecnologia</li>
+          <li class="flex gap-3"><span class="mt-1 w-2 h-2 bg-emerald-600 rounded-full"></span> Acesso gratuito a prévias e newsletters</li>
+        </ul>
+      </div>
+      <div class="lg:col-span-1">
+        <div class="p-6 rounded-3xl bg-neutral-50 border border-neutral-200">
+          <h3 class="font-semibold">Para Anunciantes</h3>
+          <p class="mt-2 text-neutral-600">Quer posicionar sua marca na Feira Livre?</p>
+          <a id="anunciar" href="#contato" class="mt-4 inline-flex px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Solicitar mídia kit</a>
+          <p class="mt-3 text-xs text-neutral-500">Envie uma mensagem no formulário abaixo e receba o mídia kit por e-mail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-black tracking-tight">Planos de Assinatura</h2>
+        <p class="mt-3 text-neutral-600">Escolha o plano ideal para você ou para sua empresa.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="relative p-6 rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm flex flex-col">
+          <h3 class="font-bold text-xl">Gratuito</h3>
+          <p class="mt-1 text-3xl font-black">R$ 0</p>
+          <ul class="mt-4 space-y-2 flex-1">
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Prévia das edições</li>
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Newsletter mensal</li>
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Convites para eventos abertos</li>
+          </ul>
+          <button class="mt-6 px-4 py-2 rounded-xl border border-neutral-300 hover:border-emerald-600 hover:text-emerald-700" onclick="openAuth(false)">Começar</button>
+        </div>
+        <div class="relative p-6 rounded-3xl border border-emerald-600 bg-white shadow-xl flex flex-col">
+          <span class="absolute -top-3 right-6 px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-semibold shadow">Mais popular</span>
+          <h3 class="font-bold text-xl">Assinante</h3>
+          <p class="mt-1 text-3xl font-black">R$ 19/mês</p>
+          <ul class="mt-4 space-y-2 flex-1">
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Acesso total às edições</li>
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Arquivos completos</li>
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Descontos em eventos</li>
+          </ul>
+          <button class="mt-6 px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700" onclick="openAuth(false)">Assinar agora</button>
+        </div>
+        <div class="relative p-6 rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm flex flex-col">
+          <h3 class="font-bold text-xl">Empresas</h3>
+          <p class="mt-1 text-3xl font-black">Sob consulta</p>
+          <ul class="mt-4 space-y-2 flex-1">
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Licenças para equipe</li>
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Pacotes de mídia</li>
+            <li class="flex gap-3 text-neutral-700"><span class="mt-2 w-2 h-2 bg-emerald-600 rounded-full"></span>Conteúdo co-branded</li>
+          </ul>
+          <button class="mt-6 px-4 py-2 rounded-xl border border-neutral-300 hover:border-emerald-600 hover:text-emerald-700" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Falar com vendas</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 border-t border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-6 rounded-3xl bg-gradient-to-br from-emerald-50 to-white border border-emerald-100">
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h3 class="text-2xl font-black tracking-tight">Receba nossa newsletter</h3>
+            <p class="mt-2 text-neutral-600">Insights de marketing, cultura e consumo, direto no seu e-mail.</p>
+          </div>
+          <form onsubmit="event.preventDefault(); alert('Obrigado! Você está inscrito.');" class="flex gap-3">
+            <input required type="email" placeholder="Seu e-mail" class="flex-1 px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            <button class="px-5 py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Inscrever</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl font-black tracking-tight">Fale com a redação</h2>
+          <p class="mt-3 text-neutral-600">Sugestões de pauta, parcerias e anúncios.</p>
+          <form onsubmit="event.preventDefault(); alert('Mensagem enviada! Retornaremos em breve.');" class="mt-6 grid grid-cols-1 gap-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <input required placeholder="Nome" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              <input required type="email" placeholder="E-mail" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            </div>
+            <input placeholder="Empresa (opcional)" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            <textarea required rows="5" placeholder="Mensagem" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+            <button class="w-full sm:w-auto px-5 py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Enviar</button>
+          </form>
+        </div>
+        <div class="p-6 rounded-3xl bg-neutral-50 border border-neutral-200">
+          <h3 class="font-semibold">Informações importantes</h3>
+          <ul class="mt-3 space-y-2 text-neutral-700">
+            <li><strong>E-mail:</strong> feiralivreproject@gmail.com</li>
+            <li><strong>WhatsApp:</strong> 21 98569-4716</li>
+            <li><strong>Endereço:</strong> Rio de Janeiro — Brasil</li>
+          </ul>
+          <div class="mt-4 text-sm text-neutral-500">
+            <p>Horário de atendimento: 12h às 22h (BRT).</p>
+            <p class="mt-2">Para acesso corporativo, solicite integração via SSO (em breve).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid md:grid-cols-4 gap-8 text-sm">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 grid place-content-center text-white font-black">FL</div>
+            <p class="font-semibold">Feira Livre — Revista de Marketing</p>
+          </div>
+          <p class="mt-3 text-neutral-600 max-w-md">Conteúdo que inspira decisões e aproxima marcas de pessoas. © <span id="year"></span> Todos os direitos reservados.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-neutral-900">Mapa do site</p>
+          <ul class="mt-2 space-y-2">
+            <li><a href="#edicoes" class="hover:text-emerald-700">Edições</a></li>
+            <li><a href="#sobre" class="hover:text-emerald-700">Sobre</a></li>
+            <li><a href="#planos" class="hover:text-emerald-700">Assinatura</a></li>
+            <li><a href="#contato" class="hover:text-emerald-700">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-neutral-900">Legal</p>
+          <ul class="mt-2 space-y-2">
+            <li><a href="#" class="hover:text-emerald-700">Política de Privacidade</a></li>
+            <li><a href="#" class="hover:text-emerald-700">Termos de Uso</a></li>
+            <li><button id="btn-login-footer" class="hover:text-emerald-700">Área do assinante</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Autenticação -->
+  <div id="auth-modal" class="fixed inset-0 z-50 items-center justify-center p-4 hidden">
+    <div class="absolute inset-0 bg-black/30" onclick="closeAuth()"></div>
+    <div class="relative w-full max-w-md mx-auto rounded-3xl bg-white shadow-2xl border border-neutral-200 p-6">
+      <div class="flex items-center justify-between">
+        <h3 id="auth-title" class="text-xl font-bold">Entrar</h3>
+        <button onclick="closeAuth()" class="w-9 h-9 grid place-content-center rounded-xl border border-neutral-300">
+          <span class="sr-only">Fechar</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert(window.__isLogin ? 'Login efetuado! (protótipo)' : 'Conta criada! (protótipo)'); closeAuth();" class="mt-4 grid gap-3">
+        <input id="name-field" placeholder="Nome completo" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 hidden" />
+        <input required type="email" placeholder="E-mail" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+        <input required type="password" placeholder="Senha" class="px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+        <div id="tos" class="text-xs text-neutral-500 hidden">Ao criar sua conta, você concorda com nossos <a class="underline" href="#">Termos</a> e <a class="underline" href="#">Privacidade</a>.</div>
+        <button class="mt-2 px-4 py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700" id="submit-auth">Entrar</button>
+        <button type="button" onclick="toggleAuth()" class="text-sm text-emerald-700 hover:underline" id="toggle-auth">Não tem conta? Crie uma agora</button>
+      </form>
+      <div class="mt-4">
+        <button onclick="alert('SSO em breve')" class="w-full px-4 py-2 rounded-xl border border-neutral-300 hover:border-emerald-600 hover:text-emerald-700">Entrar com Google / SSO (em breve)</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // util
+    const $ = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu
+    $('#btn-menu').addEventListener('click', () => {
+      const m = $('#mobile-menu');
+      m.classList.toggle('hidden');
+    });
+
+    // auth modal logic
+    window.__isLogin = true;
+    function openAuth(isLogin = true) {
+      window.__isLogin = isLogin;
+      $('#auth-modal').classList.remove('hidden');
+      $('#auth-modal').classList.add('flex');
+      updateAuthUI();
+    }
+    function closeAuth() {
+      $('#auth-modal').classList.add('hidden');
+      $('#auth-modal').classList.remove('flex');
+    }
+    function toggleAuth() {
+      window.__isLogin = !window.__isLogin;
+      updateAuthUI();
+    }
+    function updateAuthUI() {
+      const isLogin = window.__isLogin;
+      $('#auth-title').textContent = isLogin ? 'Entrar' : 'Criar conta';
+      $('#submit-auth').textContent = isLogin ? 'Entrar' : 'Criar conta';
+      $('#toggle-auth').textContent = isLogin ? 'Não tem conta? Crie uma agora' : 'Já tem conta? Entre aqui';
+      $('#name-field').classList.toggle('hidden', isLogin);
+      $('#tos').classList.toggle('hidden', isLogin);
+    }
+
+    // attach buttons
+    $('#btn-login').addEventListener('click', () => openAuth(true));
+    $('#btn-login-mobile').addEventListener('click', () => openAuth(true));
+    $('#btn-login-footer').addEventListener('click', () => openAuth(true));
+  </script>
+</body>
+</html>
